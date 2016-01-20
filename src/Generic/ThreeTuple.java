@@ -3,12 +3,12 @@ package Generic;
 /**
  * Created by Tan on 15/12/7.
  */
-public class ThreeTuple<C> extends TwoTuple<A, B> {
+public class ThreeTuple<A, B, C> extends TwoTuple<A, B> {
     public final C third;
 
-    public ThreeTuple(A a, B b, C third) {
+    public ThreeTuple(A a, B b, C c) {
         super(a, b);
-        this.third = third;
+        third = c;
     }
 
     public String toString() {

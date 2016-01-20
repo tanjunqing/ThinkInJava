@@ -12,6 +12,14 @@ public class TwoTuple<A, B> {
         this.second = b;
     }
 
+    public A getFirst() {
+        return first;
+    }
+
+    public B getSecond() {
+        return second;
+    }
+
     @Override
     public String toString() {
         return "TwoTuple{" +
@@ -19,4 +27,17 @@ public class TwoTuple<A, B> {
                 ", second=" + second +
                 '}';
     }
+
+    public static void main(String[] args) {
+        Student student = new Student();
+        student.setName("tan");
+        Automobile automobile = new Automobile();
+        automobile.setFox("1234");
+        TwoTuple<Student,Automobile> twoTuple = new TwoTuple<Student, Automobile>(student,automobile);
+        Student student1 = twoTuple.getFirst();
+        Automobile automobile1 = twoTuple.getSecond();
+        System.out.println(student1.getName());
+        System.out.println(automobile1.getFox());
+        System.out.println(twoTuple.toString());
+     }
 }
