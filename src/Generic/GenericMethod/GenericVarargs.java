@@ -23,5 +23,9 @@ public class GenericVarargs {
         System.out.println(ls);
         ls = makeList("ABCDEFGHI".split(""));
         System.out.println(ls);
+        List<Long> longList = makeList(1L, 2L, 3L);//Long 类型
+        System.out.println(longList);
+        List<Integer> integerList = makeList(1, 2, 3, 4, 5);//Integer类型
+        System.out.println(integerList);
     }
 }

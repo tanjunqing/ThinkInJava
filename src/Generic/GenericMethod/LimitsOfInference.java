@@ -12,6 +12,10 @@ public class LimitsOfInference {
 
     }
 
+    static void ff(Map<String, List<? extends String>> maps) {
+
+    }
+
     static void fs(Map<String, List<? extends String>> maps) {
 
     }
@@ -21,7 +25,7 @@ public class LimitsOfInference {
 //        f(New.map());
         LimitsOfInference limitsOfInference = new LimitsOfInference();
         limitsOfInference.f(fff);
-
+        ff(New.<String, List<? extends String>>map());
         fs(New.<String, List<? extends String>>map());
     }
 }
