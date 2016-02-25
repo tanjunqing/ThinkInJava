@@ -1,6 +1,6 @@
 package IO.FileSimple;
 
-import IO.SysteamParam;
+import IO.SystemParam;
 
 import java.io.File;
 
@@ -10,7 +10,7 @@ import java.io.File;
 public class FileDemo {
 
     public static void main(String... args) {
-        String filePath = SysteamParam.Win_File_Path;
+        String filePath = SystemParam.Win_File_Path;
         File file = new File(filePath);
         String[] list = file.list();
         //判断是否为文件目录

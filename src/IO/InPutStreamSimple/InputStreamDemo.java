@@ -1,5 +1,7 @@
 package IO.InPutStreamSimple;
 
+import IO.SystemParam;
+
 import java.io.*;
 
 /**
@@ -7,7 +9,8 @@ import java.io.*;
  */
 public class InputStreamDemo {
     public static void main(String... args) {
-        File file = new File("/Users/Tan/JavaDemo/ThinkInJava/src/IO/InPutStreamSimple/test");
+        String filePath = SystemParam.Win_File_Path + "/test";
+        File file = new File(filePath);
         byte[] bytes = new byte[(int) file.length()];
         if (file.exists()) {
             try {

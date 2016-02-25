@@ -1,5 +1,6 @@
 package IO.WriteSimple;
 
+import IO.SystemParam;
 import com.google.common.primitives.Chars;
 
 import java.io.*;
@@ -10,11 +11,11 @@ import java.nio.charset.Charset;
  */
 public class FileReadDemo {
     public static void main(String... args) throws IOException {
-        File file = new File("/Users/Tan/JavaDemo/ThinkInJava/src/IO/InPutStreamSimple/test");
+        File file = new File(SystemParam.Win_File_Path + "/test.txt");
         FileInputStream fileInputStream = new FileInputStream(file);
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8");
         BufferedReader bf = new BufferedReader(inputStreamReader);
-        File fileTo = new File("/Users/Tan/JavaDemo/ThinkInJava/src/IO/InPutStreamSimple/test1");
+        File fileTo = new File(SystemParam.Win_File_Path + "/test3.txt");
         String l = null;
         StringBuffer bs = new StringBuffer();
         FileWriter fileWriter = new FileWriter(fileTo, true);
