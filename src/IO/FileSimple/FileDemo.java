@@ -1,5 +1,7 @@
 package IO.FileSimple;
 
+import IO.SysteamParam;
+
 import java.io.File;
 
 /**
@@ -8,7 +10,8 @@ import java.io.File;
 public class FileDemo {
 
     public static void main(String... args) {
-        File file = new File("/Users/Tan/JavaDemo/ThinkInJava/src/IO/FileSimple");
+        String filePath = SysteamParam.Win_File_Path;
+        File file = new File(filePath);
         String[] list = file.list();
         //判断是否为文件目录
         if (file.isDirectory()) {
