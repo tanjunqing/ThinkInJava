@@ -1,0 +1,1 @@
+package Generic.InterFace;/** * Created by Tan on 2016/11/8. */public class InfoImpl2<T> implements Info<T> {    private T var;    public InfoImpl2(T var){        this.var = var;    }    @Override    public T getVar() {        return this.var;    }    @Override    public void setVar(T t) {        this.var = t;    }}

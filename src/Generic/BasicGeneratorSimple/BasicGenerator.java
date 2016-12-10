@@ -1,9 +1,11 @@
 package Generic.BasicGeneratorSimple;
 
+import Generic.coffee.Generator;
+
 /**
  * Created by Tan on 16/1/22.
  */
-public class BasicGenerator<T> implements Generic.coffee.Generator<T> {
+public class BasicGenerator<T> implements Generator<T> {
 
     private Class<T> type;
 

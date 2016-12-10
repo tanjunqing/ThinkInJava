@@ -1,0 +1,1 @@
+package Generic.InterFace;/** * Created by Tan on 2016/11/8. */public class InfoTest {    public static void main(String... args) {//        InfoImpl i = new InfoImpl("harvic");//        System.out.println(i.getVar());        InfoImpl2<String> i = new InfoImpl2<String>("112313");        System.out.println(i.getVar());    }}

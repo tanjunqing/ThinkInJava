@@ -1,0 +1,1 @@
+package Generic.InterFace;/** * Created by Tan on 2016/11/8. */public interface Info<T> {    public T getVar();    public void setVar(T t);}

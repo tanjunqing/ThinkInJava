@@ -1,0 +1,1 @@
+package Generic.InterFace;/** * Created by Tan on 2016/11/8. */public class InfoImpl implements Info<String> {    private String var;    public InfoImpl(String var){        this.var = var;    }    @Override    public String getVar() {        return this.var;    }    @Override    public void setVar(String var) {        this.var = var;    }}

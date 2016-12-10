@@ -1,0 +1,1 @@
+package Map;import com.google.common.collect.Maps;import java.util.Map;/** * Created by Tan on 2016/11/25. */public class MyMap {    public Map<Long, Long> map1 = Maps.newHashMap();    public void s1(){        map1.put(1L,2L);        map1.put(1L,2L);    }}
